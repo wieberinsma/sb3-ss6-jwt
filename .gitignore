@@ -1,0 +1,11 @@
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.classpath
+.factorypath
+.project
+.settings
+
+### IntelliJ IDEA ###
+.idea
+*.iml
