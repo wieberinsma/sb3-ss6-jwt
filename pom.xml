@@ -18,6 +18,7 @@
         <apache.commons.version>3.12.0</apache.commons.version>
         <h2.version>2.1.214</h2.version>
         <spring.security.test.version>6.2.3</spring.security.test.version>
+        <postgres.version>42.7.2</postgres.version>
     </properties>
     
     <dependencies>
@@ -73,6 +74,12 @@
             <version>${h2.version}</version>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgres.version}</version>
+            <scope>runtime</scope>
+        </dependency>
 
         <!-- Test dependencies -->
         <dependency>
@@ -94,6 +101,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>
