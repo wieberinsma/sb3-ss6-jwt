@@ -2,7 +2,8 @@ package nl.han.oose.project.sb3.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 
-public interface JwtService {
+public interface JwtService
+{
     String extractUserName(String token);
 
     String generateToken(UserDetails userDetails);

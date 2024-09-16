@@ -50,6 +50,7 @@ public class JwtServiceImpl implements JwtService
 
     private String generateToken(Map<String, Object> extraClaims, UserDetails userDetails)
     {
+        @SuppressWarnings("unchecked")
         var signingAlg = (SecureDigestAlgorithm<? super Key, ?>) Jwts.SIG.get().get("HS256");
 
         return Jwts.builder()
@@ -73,8 +74,11 @@ public class JwtServiceImpl implements JwtService
 
     private Claims extractAllClaims(String token)
     {
-        return Jwts.parser().verifyWith(getSigningKey()).build().parseClaimsJws(token)
-                .getBody();
+        return Jwts.parser()
+                .verifyWith(getSigningKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload();
     }
 
     private SecretKey getSigningKey()

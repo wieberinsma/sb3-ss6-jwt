@@ -1,6 +1,7 @@
 package nl.han.oose.project.sb3.entities;
 
-public enum Role {
+public enum Role
+{
     USER,
     ADMIN
 }
