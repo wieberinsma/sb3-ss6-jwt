@@ -12,13 +12,12 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
 
-        <spring.boot.version>3.2.3</spring.boot.version>
+        <spring.boot.version>3.2.4</spring.boot.version>
         <jwt.version>0.12.5</jwt.version>
         <lombok.version>1.18.30</lombok.version>
         <apache.commons.version>3.12.0</apache.commons.version>
         <h2.version>2.1.214</h2.version>
         <spring.security.test.version>6.2.3</spring.security.test.version>
-        <postgres.version>42.7.2</postgres.version>
     </properties>
     
     <dependencies>
@@ -72,12 +71,6 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>${h2.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgres.version}</version>
             <scope>runtime</scope>
         </dependency>
 
