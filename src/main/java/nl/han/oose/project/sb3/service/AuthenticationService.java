@@ -1,8 +1,8 @@
 package nl.han.oose.project.sb3.service;
 
-import nl.han.oose.project.sb3.dao.request.SignUpRequest;
-import nl.han.oose.project.sb3.dao.request.SigninRequest;
-import nl.han.oose.project.sb3.dao.response.JwtAuthenticationResponse;
+import nl.han.oose.project.sb3.domain.request.SignUpRequest;
+import nl.han.oose.project.sb3.domain.request.SigninRequest;
+import nl.han.oose.project.sb3.domain.response.JwtAuthenticationResponse;
 
 public interface AuthenticationService
 {

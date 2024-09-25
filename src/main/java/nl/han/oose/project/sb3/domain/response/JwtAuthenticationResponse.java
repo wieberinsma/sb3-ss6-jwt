@@ -1,4 +1,4 @@
-package nl.han.oose.project.sb3.dao.response;
+package nl.han.oose.project.sb3.domain.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

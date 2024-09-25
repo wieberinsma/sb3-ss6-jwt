@@ -1,8 +1,8 @@
 package nl.han.oose.project.sb3.controller;
 
-import nl.han.oose.project.sb3.dao.request.SignUpRequest;
-import nl.han.oose.project.sb3.dao.request.SigninRequest;
-import nl.han.oose.project.sb3.dao.response.JwtAuthenticationResponse;
+import nl.han.oose.project.sb3.domain.request.SignUpRequest;
+import nl.han.oose.project.sb3.domain.request.SigninRequest;
+import nl.han.oose.project.sb3.domain.response.JwtAuthenticationResponse;
 import nl.han.oose.project.sb3.service.AuthenticationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
